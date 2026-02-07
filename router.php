@@ -5,7 +5,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 // 1. Serve Static Files from 'export/' folder
 // (Since assets are now in export/assets, but browser requests /assets/...)
-$exportFile = __DIR__ . '/export' . $uri;
+$exportFile = __DIR__ . '/loja' . $uri;
 if (file_exists($exportFile) && !is_dir($exportFile)) {
     $ext = strtolower(pathinfo($exportFile, PATHINFO_EXTENSION));
     $mimes = [
@@ -39,26 +39,26 @@ if ($uri === '/admin') {
 // 3. Product Route
 if (preg_match('#^/product/(\d+)/?$#', $uri, $matches)) {
     $_GET['product_id'] = $matches[1];
-    require 'export/product.php';
+    require 'loja/product.php';
     exit;
 }
 
 // 4. Chat Route
 if ($uri === '/chat') {
-    require 'export/chat.php';
+    require 'loja/chat.php';
     exit;
 }
 
 // 5. Home Route
 if ($uri === '/' || $uri === '/index.php') {
-    require 'export/index.php';
+    require 'loja/index.php';
     exit;
 }
 
 // 6. 404
 http_response_code(404);
-if (file_exists('export/404.php')) {
-    require 'export/404.php';
+if (file_exists('loja/404.php')) {
+    require 'loja/404.php';
 } else {
     echo "404 Not Found";
 }

@@ -16,7 +16,7 @@ if (isset($_GET['action']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
 
-        $uploadDir = __DIR__ . '/../export/database/uploads/';
+        $uploadDir = __DIR__ . '/../loja/database/uploads/';
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0755, true);
         }
@@ -59,7 +59,7 @@ if (isset($_GET['action']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 }
-$configFile = __DIR__ . '/../export/database/config.json';
+$configFile = __DIR__ . '/../loja/database/config.json';
 
 // Handle Save
 $message = '';
