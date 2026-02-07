@@ -20,8 +20,13 @@ body {
 }
 
 a {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:visited {
+  color: inherit !important;
 }
 
 /* Global Utilities */

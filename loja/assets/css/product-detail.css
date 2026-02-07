@@ -32,6 +32,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #333 !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .searchBar {
@@ -504,6 +506,8 @@
   font-weight: 500;
   cursor: pointer;
   gap: 4px;
+  color: #333 !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .descriptionContent p {
