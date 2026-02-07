@@ -1,0 +1,249 @@
+{
+    "store": {
+        "name": "GoCaseBR",
+        "currency_symbol": "R$",
+        "locale": "pt-BR",
+        "logo": "database/uploads/upload_69828d4cb181f.jpg",
+        "sales_count": 36400,
+        "response_rate": 97,
+        "on_time_delivery_rate": 88,
+        "chat_auto_reply": "Recebemos sua mensagem. Em breve, um atendente retornará o contato.",
+        "custom_head_code": "<script></script>"
+    },
+    "products": [
+        {
+            "id": 1770164989543,
+            "title": "Garrafa Flow 500ml",
+            "current_price": 4590,
+            "original_price": 5555,
+            "checkout_url": "",
+            "rating_value": 4,
+            "rating_count": 1500,
+            "sold_count": 11700,
+            "description_body": "Existe copo térmico mais estiloso do que esse? O Copo Térmico Life chegou chegando. 🙂\nCom capacidade de 1.170 ml, 880ml o Copo Life mantém sua bebida quente por até 6 hrs (*Líquidos até 60°C) ou fria (com gelo) por até 40hrs (880ml) e 48hrs (1.170ml). Depois dessa, não tem espaço para café frio e suco quente, hein? 💧Quanto mais fria/quente estiver a bebida, por mais tempo o Copo Life manterá a temperatura dela.\nP.S: Para uma bebida mais gelada, recomendamos utilizar gelo dentro do copo.\nDepois dessa novidade, a hora de combinar a estampa do copo com a estampa da mochila, lancheira, capinha e bolsa de viagem, é agora. O seu sonho se realizou! ✨\n\nInformações relevantes:\nAlça lateral (nos volumes 1170ml e 880ml)\n6 horas bebida quente (*Líquidos até 60°C)\n48 horas com gelo (1.170ml)\n40 horas com gelo (880ml)\nAlça: PP\nTampa e Canudo: Tritan\nParede dupla isolada a vácuo\nCorpo em Aço inoxidável 304 (aço inoxidável 18/8)",
+            "has_variations": true,
+            "variation_type": "Cor",
+            "variations": [
+                {
+                    "id": "v_1770164237307",
+                    "name": "Rosa",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69862c210e749.jpg",
+                    "checkout_url": "https://www.google.com/?rosa"
+                },
+                {
+                    "id": "v_1770164358877",
+                    "name": "Branca",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829091b78bd.jpg",
+                    "checkout_url": "https://www.google.com/?branco"
+                },
+                {
+                    "id": "v_1770164438589",
+                    "name": "Azul",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698290dbcf445.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770164447290",
+                    "name": "Melancia",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829111f38be.jpg",
+                    "checkout_url": "https://www.google.com/"
+                },
+                {
+                    "id": "v_1770164452231",
+                    "name": "Preta",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829115e0f4c.jpg",
+                    "checkout_url": "https://www.google.com/"
+                }
+            ],
+            "offer": {
+                "is_flash_sale": false,
+                "timer_initial_seconds": 6268
+            },
+            "shipping": {
+                "free_shipping": false,
+                "shipping_fee_original": 1747
+            },
+            "reviews": [
+                {
+                    "user_name": "Larissa A.",
+                    "user_avatar": "database/uploads/upload_69862a5b9dec3.jpg",
+                    "rating": 5,
+                    "date": "03/02/2026 21:29",
+                    "variation": "Preto",
+                    "text": "O melhor copo do mundo, todo mundo aqui em casa já tem, de tão maravilhoso que é!",
+                    "images": [
+                        "database/uploads/upload_69862a709a129.jpg",
+                        "database/uploads/upload_69862a75df564.jpg",
+                        "database/uploads/upload_69862c0d2378d.jpg"
+                    ],
+                    "_tempId": "rev_1770400830516_0"
+                },
+                {
+                    "user_name": "Laura A.",
+                    "user_avatar": "database/uploads/upload_6983733cb2a00.jpg",
+                    "rating": 4.8,
+                    "date": "04/02/2026 13:26",
+                    "variation": "Padrão",
+                    "text": "srsdfxvcvxvccv",
+                    "images": [
+                        "database/uploads/upload_69837352e705e.jpg",
+                        "database/uploads/upload_698373550e547.jpg"
+                    ],
+                    "_tempId": "rev_1770222429012_2"
+                },
+                {
+                    "user_name": "Maryssol T.",
+                    "user_avatar": "database/uploads/upload_69829fac8641f.jpg",
+                    "rating": 5,
+                    "date": "03/02/2026 21:27",
+                    "variation": "Rosa",
+                    "text": "Eu amei meu copo. É lindo, fácil de transportar, conserva muito bem a água e não vaza. Perfeito!",
+                    "images": [
+                        "database/uploads/upload_69829298c03e2.jpg",
+                        "database/uploads/upload_6982929adcc6e.jpg",
+                        "database/uploads/upload_6982929cd02a6.jpg"
+                    ],
+                    "_tempId": "rev_1770169123789_0"
+                }
+            ],
+            "images": [
+                "database/uploads/upload_69828d5a39c71.jpg",
+                "database/uploads/upload_6986289932d5f.jpg"
+            ]
+        },
+        {
+            "id": 1770164989544,
+            "title": "Garrafa Flow 500ml",
+            "current_price": 3990,
+            "original_price": 4990,
+            "checkout_url": "https://www.gocase.com.br/garrafa-flow-500ml/p",
+            "rating_value": 0,
+            "rating_count": 1500,
+            "sold_count": 8700,
+            "description_body": "Existe copo térmico mais estiloso do que esse? O Copo Térmico Life chegou chegando. 🙂\nCom capacidade de 1.170 ml, 880ml o Copo Life mantém sua bebida quente por até 6 hrs (*Líquidos até 60°C) ou fria (com gelo) por até 40hrs (880ml) e 48hrs (1.170ml). Depois dessa, não tem espaço para café frio e suco quente, hein? 💧Quanto mais fria/quente estiver a bebida, por mais tempo o Copo Life manterá a temperatura dela.\nP.S: Para uma bebida mais gelada, recomendamos utilizar gelo dentro do copo.\nDepois dessa novidade, a hora de combinar a estampa do copo com a estampa da mochila, lancheira, capinha e bolsa de viagem, é agora. O seu sonho se realizou! ✨\n\nInformações relevantes:\nAlça lateral (nos volumes 1170ml e 880ml)\n6 horas bebida quente (*Líquidos até 60°C)\n48 horas com gelo (1.170ml)\n40 horas com gelo (880ml)\nAlça: PP\nTampa e Canudo: Tritan\nParede dupla isolada a vácuo\nCorpo em Aço inoxidável 304 (aço inoxidável 18/8)",
+            "has_variations": false,
+            "variation_type": "Cor",
+            "variations": [
+                {
+                    "id": "v_1770164358877",
+                    "name": "Branca",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829091b78bd.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770164237307",
+                    "name": "Rosa",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698290bc09912.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770164438589",
+                    "name": "Azul",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698290dbcf445.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770164447290",
+                    "name": "Melancia",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829111f38be.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770164452231",
+                    "name": "Preta",
+                    "price": 3990,
+                    "image": "database/uploads/upload_69829115e0f4c.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770165979932",
+                    "name": "bbb",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698296f2089fc.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770165980616",
+                    "name": "ccc",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698296f481a47.jpg",
+                    "checkout_url": ""
+                },
+                {
+                    "id": "v_1770165981237",
+                    "name": "ddd",
+                    "price": 3990,
+                    "image": "database/uploads/upload_698296f6a5054.jpg",
+                    "checkout_url": ""
+                }
+            ],
+            "offer": {
+                "is_flash_sale": false,
+                "timer_initial_seconds": 6268
+            },
+            "shipping": {
+                "free_shipping": false,
+                "shipping_fee_original": 1747
+            },
+            "reviews": [
+                {
+                    "user_name": "Maryssol T.",
+                    "user_avatar": "database/uploads/upload_6982a35c5b468.jpg",
+                    "rating": 5,
+                    "date": "03/02/2026 21:27",
+                    "variation": "Rosa",
+                    "text": "Eu amei meu copo. É lindo, fácil de transportar, conserva muito bem a água e não vaza. Perfeito!",
+                    "images": [
+                        "database/uploads/upload_69829298c03e2.jpg",
+                        "database/uploads/upload_6982929adcc6e.jpg",
+                        "database/uploads/upload_6982929cd02a6.jpg"
+                    ],
+                    "_tempId": "rev_1770169181641_0"
+                },
+                {
+                    "user_name": "Larissa A.",
+                    "user_avatar": "",
+                    "rating": 5,
+                    "date": "03/02/2026 21:29",
+                    "variation": "Preto",
+                    "text": "O melhor copo do mundo, todo mundo aqui em casa já tem, de tão maravilhoso que é!",
+                    "images": [
+                        "database/uploads/upload_698292ec2b631.jpg",
+                        "database/uploads/upload_698292ee39869.jpg"
+                    ],
+                    "_tempId": "rev_1770169080448_1"
+                }
+            ],
+            "images": [
+                "database/uploads/upload_69828f536fd40.jpg",
+                "database/uploads/upload_69828d5a39c71.jpg"
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "id": "delivery",
+            "question": "Qual é o prazo de entrega?",
+            "answer": "O prazo de entrega varia de acordo com a sua região. Geralmente, leva de 3 a 7 dias úteis. Produtos com frete grátis podem ter prazos diferenciados."
+        },
+        {
+            "id": "return",
+            "question": "Como funciona a troca/devolução?",
+            "answer": "Você tem até 30 dias após o recebimento para solicitar a troca ou devolução. O produto deve estar em perfeito estado e na embalagem original."
+        },
+        {
+            "id": "tracking",
+            "question": "Como rastrear meu pedido?",
+            "answer": "Após a confirmação do pagamento, você receberá um código de rastreamento por e-mail em até 3 dias úteis."
+        }
+    ]
+}

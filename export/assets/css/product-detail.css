@@ -1,0 +1,1254 @@
+/* Page specific layout */
+.pagePadding {
+  padding-bottom: 140px;
+  padding-top: 100px;
+  /* Space for fixed top bar */
+}
+
+/* Top Bar */
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  z-index: 100;
+  background: white;
+}
+
+.navRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  flex: 1;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  color: #333;
+}
+
+.searchInput {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.topIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topIcon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.tabsRow {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 18px;
+  /* Adjusted to match navRow and ensure symmetry */
+}
+
+.tabItem {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #757575;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabItem span {
+  display: inline-block;
+  position: relative;
+}
+
+.activeTab {
+  color: #000;
+  font-weight: 600;
+}
+
+.activeTab span::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.header {
+  background: linear-gradient(90deg, #fe2c55 0%, #fe2c55 60%, #ff6a00 100%);
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.lightningBackground {
+  position: absolute;
+  right: 88px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.priceMain {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+
+.currentPrice {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.originalPrice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 6px;
+}
+
+.headerRight {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.flashSale {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.flashIcon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.timer {
+  font-size: 13px;
+  margin-top: 2px;
+  width: 135px;
+  margin-right: -3px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 500;
+}
+
+.content {
+  background: white;
+  padding: 0 16px;
+}
+
+.installments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 8px;
+}
+
+.installmentsLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.walletIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.arrowRight {
+  color: #999;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.coupons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+}
+
+.coupon {
+  background-color: #fcebeb;
+  /* Light pink */
+  color: #fe2c55;
+  /* Red */
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.coupon-bonus {
+  background-color: #fff6ea;
+  color: #8b4d0b;
+}
+
+/* Specific styling for the tag shape could be complex, simple rectangles for now */
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 15px;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 500;
+  /* Regular weight, maybe slightly bold */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bookmarkIcon {
+  min-width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #757575;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stats .starIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #ff5000;
+  /* Star color seems orange/yellow */
+}
+
+.starIcon {
+  width: 12px;
+  height: 12px;
+  fill: #ffce3d;
+}
+
+.ratingValue {
+  color: #000;
+  margin-right: 2px;
+}
+
+.ratingCount {
+  color: #05a;
+  /* Link color blue-ish often */
+  color: #757575;
+  /* In image it looks blue? "2,3 mil" is blue. */
+  color: #2673dd;
+}
+
+.separator {
+  color: #e0e0e0;
+}
+
+.soldCount {
+  color: #757575;
+}
+
+.shippingInfo {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+
+.shippingRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.truckIcon {
+  width: 20px;
+  height: 20px;
+  color: #26aa99;
+  /* Green free shipping */
+}
+
+.shippingContent {
+  font-size: 13px;
+  color: #333;
+}
+
+.freeShipping {
+  background-color: #effbf9;
+  /* Very light green */
+  color: #26aa99;
+  font-weight: 600;
+  padding: 0 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.shippingFee {
+  font-size: 12px;
+  color: #757575;
+  margin-left: 28px;
+  /* align with text */
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.protection {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* Added padding bottom */
+  color: #333;
+}
+
+.shieldIcon {
+  width: 18px;
+  height: 18px;
+  color: rgb(139, 77, 11);
+}
+
+.protectionContent {
+  flex: 1;
+}
+
+.protectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  /* Bold weight */
+  margin-bottom: 8px;
+  color: rgb(139, 77, 11);
+  /* Match shield icon color */
+}
+
+.protectionList {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+}
+
+.protectionItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.protectionItem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+  pointer-events: none;
+  display: none;
+}
+
+.protectionItem:nth-child(even)::after {
+  display: block;
+}
+
+
+.checkIcon {
+  color: #cfa56a;
+  width: 10px;
+}
+
+.description {
+  border-top: 8px solid #f5f5f5;
+  /* Thicker separator often used for main sections */
+  margin: 0 -16px;
+  /* Break out of padding */
+  padding: 12px 16px;
+  background: white;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.descriptionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.descriptionHighlight {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.descriptionContent {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+
+
+.descriptionGradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  pointer-events: none;
+}
+
+.viewMoreDescription {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  background: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.descriptionContent p {
+  margin-bottom: 12px;
+}
+
+.descriptionContent ul {
+  padding-left: 0;
+  list-style: none;
+  /* User text has hyphens already */
+  margin-bottom: 12px;
+}
+
+.descriptionContent li {
+  margin-bottom: 4px;
+}
+
+.reviewsSection {
+  border-top: 8px solid #f5f5f5;
+  margin: 0 -16px;
+  padding: 12px 16px;
+  background: white;
+  color: #333;
+}
+
+.reviewsTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.ratingSummary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ratingSummary .starIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.reviewItem {
+  margin-bottom: 24px;
+}
+
+.reviewUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.userAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.userAvatarPurple {
+  background-color: #6b5ce7;
+  color: white;
+}
+
+.userAvatarGreen {
+  background-color: #26aa99;
+  color: white;
+}
+
+/* Using the truck icon color for consistency? Or mimic image */
+/* Image 1 avatar looks like a real photo for xgislaine, and 'L' in purple circle for lenzolopes. */
+
+.userName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.reviewStars {
+  display: flex;
+  color: #ffce3d;
+  margin-top: 8px;
+}
+
+.reviewStars .starIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.reviewMeta {
+  font-size: 11px;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.reviewText {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.reviewMedia {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  /* Hide scrollbar for cleaner look */
+}
+
+.reviewMedia::-webkit-scrollbar {
+  display: none;
+}
+
+.mediaPlaceholder {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  /* Default placeholder color */
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.playIconOverlay {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.showMoreButton {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  z-index: 100;
+  background: white;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.shippingBanner {
+  background-color: #f0fbf9;
+  color: #26aa99;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.shippingBannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+.shippingBannerText {
+  color: #757575;
+}
+
+.shippingBannerHighlight {
+  color: #009688;
+  font-weight: 700;
+}
+
+.shippingBannerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shippingTimer {
+  color: #009688;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.closeBanner {
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+  background: white;
+}
+
+.actionIconBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-width: 32px;
+}
+
+.actionIconBtn svg {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.buyNowSubtext {
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Recommendations Section */
+.recommendationsSection {
+  border-top: 8px solid #f5f5f5;
+  margin: 0 -16px;
+  padding: 12px 16px;
+  background: #f5f5f5;
+}
+
+.recommendationsTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.recommendationsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.productCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.videoBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.recommenderInfo {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recommenderAvatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.productInfo {
+  padding: 10px;
+}
+
+.productTitle {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.inlineBadge {
+  background: #fe2c55;
+  color: white;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 700;
+  margin-right: 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.productPriceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.productPrice {
+  color: #fe2c55;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.productOriginalPrice {
+  color: #999;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.discountTag {
+  background: #fff0f1;
+  color: #fe2c55;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-size: 12px;
+  color: #757575;
+}
+
+.ratingRow svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Helper for the pipe separator */
+.ratingSeparator {
+  color: #ddd;
+  font-size: 10px;
+}
+
+.recommendationsSection+.reviewsSection {
+  border-top: none;
+  /* Avoid double borders if stacked */
+}
+
+/* Seller Info Section */
+.sellerInfo {
+  border-top: 8px solid #f5f5f5;
+  margin: 0 -16px;
+  padding: 16px;
+  background: white;
+  color: #333;
+}
+
+.sellerHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.sellerAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.sellerAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sellerDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sellerName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.sellerSales {
+  font-size: 12px;
+  color: #757575;
+}
+
+.visitButton {
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  color: #333;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+}
+
+.sellerStats {
+  display: flex;
+  gap: 16px;
+}
+
+.statItem {
+  font-size: 12px;
+  color: #757575;
+}
+
+.statItem strong {
+  color: #000;
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+/* Variations Section */
+.variationsSection {
+  padding: 12px 0;
+  /* Removed side padding as requested */
+  background: white;
+  border-top: 1px solid #f0f0f0;
+  /* The requested line */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 13px;
+  color: #333;
+}
+
+.shippingInfo {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  /* To match click functionality */
+}
+
+.variationsInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.variationsLabel {
+  font-weight: 600;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.variationsPreview {
+  display: flex;
+  gap: 6px;
+}
+
+.variationPreviewThumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.variationsCount {
+  color: #757575;
+  font-size: 13px;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+/* Bottom Sheet Modal */
+.bottomSheetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bottomSheetOverlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bottomSheetContent {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  /* Center if on desktop */
+  border-radius: 16px 16px 0 0;
+  padding-bottom: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomSheetOverlay.open .bottomSheetContent {
+  transform: translateY(0);
+}
+
+.modalHeader {
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modalProductThumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.modalProductInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4px;
+}
+
+.modalPrice {
+  color: #fe2c55;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modalSelectedText {
+  font-size: 12px;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.modalBody {
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.variationGroupTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.variationsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.variationOption {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  background: #f9f9f9;
+  /* min-width removed to allow grid sizing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.variationOption.selected {
+  border-color: #fe2c55;
+  color: #fe2c55;
+  background: #fff0f1;
+}
+
+.variationOption img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.variationOption span {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Quantity Selector in Modal */
+.qtySection {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qtyLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.qtySelector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.qtyBtn {
+  width: 32px;
+  height: 32px;
+  background: #f5f5f5;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.qtyValue {
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  line-height: 32px;
+}
+
+.modalFooter {
+  padding: 16px;
+  border-top: 1px solid #f0f0f0;
+}

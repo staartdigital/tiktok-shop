@@ -1,0 +1,104 @@
+{
+    "store": {
+        "name": "Loja DEMO",
+        "currency_symbol": "$",
+        "locale": "pt-BR",
+        "logo": "settings/uploads/logo.jpg",
+        "sales_count": 77700,
+        "response_rate": 77,
+        "on_time_delivery_rate": 77
+    },
+    "products": [
+        {
+            "id": 1,
+            "checkout_url": "https://google.com",
+            "title": "Patinete Elétrico Scooter Para Adultos 350W Capacidade de Carga de 150KG",
+            "current_price": 77777,
+            "original_price": 141414,
+            "rating_value": 4.0,
+            "rating_count": 777,
+            "sold_count": 7777,
+            "description_highlight": "Patinete Elétrico Scooter Para Adultos 350W Capacidade de Carga de 150KG",
+            "description_body": "Teste 123 asjnsdj <p>O ar-condicionado portáteis HQ é a solução perfeita para conforto e praticidade. Disponíveis em modelos de 8.500 BTUs e 10.500 BTUs, são ideais para ambientes de até 12m. Com design moderno, oferecem modos de resfriamento, ventilação, desumidificação e temporizador de 24 horas. Utilizam gás refrigerante R32, que reduz impactos ambientais, garantindo eficiência e sustentabilidade. Compactos, fáceis de instalar e transportar, proporcionam bem-estar em qualquer lugar.</p><ul><li>- Modos de operação: Resfriamento, desumidificação e ventilação.</li><li>- Temporizador de 24 horas para maior comodidade.</li><li>- Refrigerante R32: Mais eficiente e ambientalmente responsável.</li><li>- Portátil e fácil de instalar: Ideal para qualquer lugar.</li></ul><p>Perfeito para residências, escritórios ou qualquer ambiente que precise</p>",
+            "offer": {
+                "is_flash_sale": true,
+                "timer_initial_seconds": 2838
+            },
+            "shipping": {
+                "free_shipping": true,
+                "shipping_fee_original": 2760
+            },
+            "images": [
+                "settings/uploads/product-image-01.jpg",
+                "settings/uploads/product-image-02.jpg",
+                "settings/uploads/product-image-03.jpg",
+                "settings/uploads/product-image-04.jpg"
+            ],
+            "reviews": [
+                {
+                    "user_name": "xxgislaine",
+                    "user_avatar": "settings/uploads/product-image-01.jpg",
+                    "rating": 4.5,
+                    "date": "2025-12-24 07:55",
+                    "variation": "Padrão",
+                    "text": "Teste 123 asjnsdj Umas das melhores comprar que eu fiz na shopee, faz barulho como um ventilador, porque logico fica dentro de casa essa parte, ele gela...",
+                    "images": [
+                        "settings/uploads/product-image-02.jpg",
+                        "settings/uploads/product-image-03.jpg"
+                    ]
+                },
+                {
+                    "user_name": "lenzolopes",
+                    "user_avatar": "",
+                    "rating": 5,
+                    "date": "2025-10-22 10:36",
+                    "variation": "127V",
+                    "text": "Produto aparenta boa qualidade. Ainda avaliando mas confiante em função das demais avaliações. Chegou rápido e bem embalado....",
+                    "images": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "checkout_url": "https://google.com",
+            "title": "Fone de Ouvido Bluetooth Sem Fio TWS com Microfone e Case de Carregamento",
+            "current_price": 5990,
+            "original_price": 12000,
+            "rating_value": 4.9,
+            "rating_count": 850,
+            "sold_count": 3200,
+            "description_highlight": "Qualidade de Som Impecável",
+            "description_body": "<p>Experimente a liberdade sem fios com estes fones de ouvido Bluetooth de alta performance. Com graves profundos e agudos cristalinos, você terá uma experiência sonora imersiva onde quer que vá. A bateria de longa duração garante horas de música ininterrupta.</p><ul><li>- Conexão Bluetooth 5.0 estável.</li><li>- Controle de toque intuitivo.</li><li>- Resistente a suor e respingos.</li><li>- Compatível com Android e iOS.</li></ul>",
+            "offer": {
+                "is_flash_sale": false,
+                "timer_initial_seconds": 0
+            },
+            "shipping": {
+                "free_shipping": true,
+                "shipping_fee_original": 1500
+            },
+            "images": [
+                "assets/images/product-placeholder-1.svg",
+                "assets/images/product-placeholder-1.svg",
+                "assets/images/product-placeholder-1.svg"
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "id": "delivery",
+            "question": "Qual é o prazo de entrega?",
+            "answer": "O prazo de entrega varia de acordo com a sua região. Geralmente, leva de 3 a 7 dias úteis. Produtos com frete grátis podem ter prazos diferenciados."
+        },
+        {
+            "id": "return",
+            "question": "Como funciona a troca/devolução?",
+            "answer": "Você tem até 30 dias após o recebimento para solicitar a troca ou devolução. O produto deve estar em perfeito estado e na embalagem original."
+        },
+        {
+            "id": "tracking",
+            "question": "Como rastrear meu pedido?",
+            "answer": "Após a confirmação do pagamento, você receberá um código de rastreamento por e-mail em até 3 dias úteis."
+        }
+    ]
+}
