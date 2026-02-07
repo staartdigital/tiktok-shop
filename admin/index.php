@@ -1,4 +1,95 @@
 <?php
+// Simple Auth System
+session_start();
+
+// Logout
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header('Location: /admin');
+    exit;
+}
+
+// Load .env manually since we don't have composer
+function loadEnv($path)
+{
+    if (!file_exists($path)) {
+        return [];
+    }
+    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $env = [];
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0)
+            continue;
+        list($name, $value) = explode('=', $line, 2);
+        $env[trim($name)] = trim($value);
+    }
+    return $env;
+}
+
+$env = loadEnv(__DIR__ . '/../.env');
+$adminUser = $env['ADMIN_USER'] ?? null;
+$adminPass = $env['ADMIN_PASS'] ?? null;
+
+if (!$adminUser || !$adminPass) {
+    die("Por favor, configure o arquivo .env com ADMIN_USER e ADMIN_PASS na raiz do projeto.");
+}
+
+// Check Login
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    $error = '';
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user']) && isset($_POST['pass'])) {
+        if ($_POST['user'] === $adminUser && $_POST['pass'] === $adminPass) {
+            $_SESSION['logged_in'] = true;
+            header('Location: /admin');
+            exit;
+        } else {
+            $error = 'Usuário ou senha incorretos.';
+        }
+    }
+
+    // Show Login Form
+    ?>
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login - Admin</title>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <style>
+                body { font-family: 'Inter', sans-serif; background: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+                .login-card { background: white; padding: 32px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 320px; }
+                h2 { margin-top: 0; text-align: center; margin-bottom: 24px; color: #333; }
+                .form-group { margin-bottom: 16px; }
+                label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 14px; color: #555; }
+                input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+                button { width: 100%; padding: 12px; background: #fe2c55; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; margin-top: 8px; }
+                button:hover { background: #e02448; }
+                .error { color: red; font-size: 13px; text-align: center; margin-bottom: 12px; }
+            </style>
+        </head>
+        <body>
+            <div class="login-card">
+                <h2>Admin Login</h2>
+                <?php if ($error): ?><div class="error"><?php echo $error; ?></div><?php endif; ?>
+                <form method="POST">
+                    <div class="form-group">
+                        <label>Usuário</label>
+                        <input type="text" name="user" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" name="pass" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </body>
+        </html>
+        <?php
+        exit;
+}
+
 // Handle Image Upload
 if (isset($_GET['action']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_GET['action'] === 'upload') {

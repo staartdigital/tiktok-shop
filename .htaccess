@@ -8,6 +8,10 @@ RewriteRule ^loja/database/config\.json$ - [F,L]
     Order Allow,Deny
     Deny from all
 </Files>
+<Files ".env">
+    Order Allow,Deny
+    Deny from all
+</Files>
 
 # 1. Assets (images, css, js) - serve from export/assets
 RewriteRule ^assets/(.*)$ loja/assets/$1 [L]
