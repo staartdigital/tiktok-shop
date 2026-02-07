@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteBase /
+
+# Block access to confidential configuration
+RewriteRule ^database/config\.json$ - [F,L]
+RewriteRule ^export/database/config\.json$ - [F,L]
+<Files "config.json">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# 1. Assets (images, css, js) - serve from export/assets
+RewriteRule ^assets/(.*)$ export/assets/$1 [L]
+
+# 2. Database/Uploads - serve from export/database (images only)
+RewriteRule ^database/(.*)$ export/database/$1 [L]
+
+# 3. Admin Panel
+RewriteRule ^admin/?$ admin/index.php [L,QSA]
+
+# 4. Product Page
+# Matches /product/123 -> export/product.php?product_id=123
+RewriteRule ^product/([0-9]+)/?$ export/product.php?product_id=$1 [L,QSA]
+
+# 5. Chat Page
+RewriteRule ^chat/?$ export/chat.php [L,QSA]
+
+# 6. Home Page
+RewriteRule ^$ export/index.php [L]
+RewriteRule ^index\.php$ export/index.php [L]
+
+# 7. Fallback / 404
+# If the file exists in root or is a directory, don't rewrite (serves physical files)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ export/404.php [L]
